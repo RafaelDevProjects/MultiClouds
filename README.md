@@ -74,6 +74,41 @@ Here are some key concepts related to Docker:
 
 Docker has become a foundational technology for modern application development, especially in microservices environments where various parts of an application are encapsulated in independent and scalable containers.
 
+## Kubernetes - application orchestration
+
+Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. Developed by Google and later contributed to the Cloud Native Computing Foundation (CNCF), Kubernetes provides a robust and flexible framework for orchestrating containerized workloads across clusters of machines.
+
+Key features and concepts of Kubernetes include:
+
+1. **Container Orchestration:** Kubernetes automates the deployment, scaling, and management of containers. It abstracts away the complexities of containerized application deployment, making it easier to handle complex, distributed systems.
+
+2. **Pods:** The basic unit of deployment in Kubernetes is a pod. A pod is the smallest and simplest unit in the Kubernetes object model, representing a single instance of a running process in a cluster. Pods can contain one or more containers that share the same network namespace and storage.
+
+3. **Deployments:** Deployments in Kubernetes allow you to declare the desired state for your applications, including the number of replicas, updates to application versions, and rollbacks. Deployments help manage the lifecycle of applications running in pods.
+
+4. **Services:** Kubernetes Services provide stable network endpoints to connect to a set of pods. They enable load balancing, service discovery, and abstraction from the underlying pod instances.
+
+5. **ReplicaSets:** ReplicaSets ensure that a specified number of replica pods are running at any given time. They are often used by Deployments to maintain the desired number of instances of an application.
+
+6. **Nodes:** Nodes are the individual machines (physical or virtual) that make up a Kubernetes cluster. Each node runs the necessary components to manage containers, including the Kubelet for communication with the control plane.
+
+7. **Control Plane:** The control plane is the set of components that manage the overall state of the cluster. It includes the Kubernetes Master and various controllers, such as the API server, controller manager, and etcd (a distributed key-value store).
+
+8. **ConfigMaps and Secrets:** ConfigMaps allow you to decouple configuration artifacts from container images, while Secrets store sensitive information, such as API keys or passwords, separately from the pod specification.
+
+9. **Namespaces:** Namespaces provide a way to logically divide cluster resources between multiple users or teams. They help in organizing and isolating resources within a cluster.
+
+10. **Ingress:** Ingress controllers and resources provide external access to services within the cluster, managing routing and load balancing of external traffic.
+
+Kubernetes is widely adopted for its ability to handle containerized workloads at scale, provide high availability, and support continuous deployment and rolling updates. It has become a standard tool for managing containerized applications in production environments and is a key technology in the container orchestration landscape.
+
+
+
+
+
+
+
+
 
 
 
