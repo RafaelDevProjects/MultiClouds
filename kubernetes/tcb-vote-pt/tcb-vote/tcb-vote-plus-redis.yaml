@@ -13,7 +13,7 @@ spec:
         app: tcb-vote-back
     spec:
       containers:
-      - name: tcb-vote-back
+      - name:  tcb-vote-back
         image: thecloudbootcamp/redis:6.0.8
         env:
         - name: ALLOW_EMPTY_PASSWORD
